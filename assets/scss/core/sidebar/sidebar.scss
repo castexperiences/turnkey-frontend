@@ -32,6 +32,7 @@ sidebar navigation
 .sidebar-nav {
   ul {
     .sidebar-item {
+      max-width: 100%;
       width: $sidebar-width-full;
       .sidebar-link {
         color: $sidebar-text;
