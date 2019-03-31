@@ -1,5 +1,19 @@
 // In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+.color-success {
+  color: $success;
+}
 
+.color-muted {
+  color: $muted;
+}
+
+.color-danger {
+  color: $danger;
+}
+
+.badge-pill {
+  white-space: nowrap;
+}
 /* TOASTR BUGFIX */
 #toast-container > div {
   opacity: 1;

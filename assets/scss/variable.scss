@@ -118,7 +118,7 @@ $yellow: #ffbc34 !default;
 $green: #36bea6 !default;
 $teal: #20c997 !default;
 $cyan: #4fc3f7 !default;
-$primary: #7460ee !default;
+$primary: #ff004a !default;
 $text-muted: $gray-500 !default;
 
 $colors: (
@@ -137,7 +137,7 @@ $colors: (
   gray-dark: $gray-800
 );
 
-$primary: $blue !default;
+$primary: #ff004a !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $blue !default;
@@ -226,7 +226,7 @@ $table-bg-level3: -5 !default;
 // Components
 $component-active-color: $white !default;
 $component-active-bg: $themecolor !default;
-$badge-pill-padding-x: 0.2em !default;
+$badge-pill-padding-x: 1em !default;
 $badge-pill-padding-y: 1em !default;
 // Forms
 $input-group-addon-bg: $gray-100;
