@@ -24,15 +24,15 @@
   backdrop-filter: blur(0) !important;
 }
 .toast-success {
-  background-color: #51A351 !important;
+  background-color: $success !important;
 }
 .toast-error {
-  background-color: #BD362F !important;
+  background-color: $danger !important;
 }
 .toast-info {
-  background-color: #2F96B4 !important;
+  background-color: $info !important;
 }
 .toast-warning {
-  background-color: #F89406 !important;
+  background-color: $warning !important;
 }
 /* END TOASTR BUGFIX */
