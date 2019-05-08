@@ -1,0 +1,23 @@
+h1 {
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+h2 {
+  text-transform: lowercase;
+}
+
+h3 {
+  text-transform: lowercase;
+}
+
+h4 {
+  text-transform: lowercase;
+}
+
+// Span Styles
+span {
+  &.strong {
+    font-weight: bold;
+  }
+}

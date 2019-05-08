@@ -1,0 +1,49 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+.color-success {
+  color: $success;
+}
+
+.color-muted {
+  color: $muted;
+}
+
+.color-danger {
+  color: $danger;
+}
+
+.badge-pill {
+  white-space: nowrap;
+}
+
+// Progress Bar
+.progress {
+  margin-bottom: 1rem;
+}
+
+/* Allows datetime selector to be used in modals */
+.cdk-overlay-container {
+  z-index: 1060;
+}
+
+/* TOASTR BUGFIX */
+#toast-container > div {
+  opacity: 1;
+}
+.toast {
+  font-size: initial !important;
+  border: initial !important;
+  backdrop-filter: blur(0) !important;
+}
+.toast-success {
+  background-color: $success !important;
+}
+.toast-error {
+  background-color: $danger !important;
+}
+.toast-info {
+  background-color: $info !important;
+}
+.toast-warning {
+  background-color: $warning !important;
+}
+/* END TOASTR BUGFIX */
