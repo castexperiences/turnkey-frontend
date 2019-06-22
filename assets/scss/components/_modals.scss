@@ -1,0 +1,18 @@
+.modal-alert {
+  padding: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: $success !important;
+}
+.alert-error {
+  background-color: $danger !important;
+}
+.alert-info {
+  background-color: $info !important;
+}
+.alert-warning {
+  background-color: $warning !important;
+}
