@@ -10,3 +10,7 @@
 .round {
   border-radius: 50%;
 }
+
+.btn.disabled, .btn:disabled {
+    opacity: 0.45;
+}

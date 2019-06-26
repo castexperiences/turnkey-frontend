@@ -1,10 +1,122 @@
 .input-wrapper {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .big-text-input {
-  height: 6vh;
-  width: 50%;
-  text-align: center;
-  font-size: x-large;
+    height: 6vh;
+    width: 50%;
+    text-align: center;
+    font-size: x-large;
+}
+
+// Form STYLING 1
+.form-group {
+    label {
+        display: block;
+        font-size: rem-calc(15);
+        font-weight: 600;
+        text-transform: lowercase;
+        margin-bottom: 0px;
+    }
+
+    // Input fields
+    .form-control {
+        padding: rem-calc(14) rem-calc(20) rem-calc(13);
+        color: $brand-black;
+        min-height: 40px;
+
+        &::placeholder {
+            color: $brand-grey;
+        }
+
+        // form has error
+        &.is-invalid-input {
+            border-color: #ff798b;
+            background-color: #f9e8ea;
+        }
+
+        // upper
+        &.upper:not(:placeholder-shown) {
+            text-transform: uppercase;
+        }
+
+    }
+
+    // Error messages
+    .form-error {
+        color: #ff004a;
+        font-size: rem-calc(13);
+        font-weight: 600;
+    }
+}
+
+
+// Radio Buttons
+.inline-options {
+    .option {
+
+        padding-left: 16px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        input[type="radio"] {
+            display: none;
+            visibility: hidden;
+            left: -9999px;
+
+            & + label {
+                background-color: $brand-grey;
+                color: #fff;
+                border: none;
+                padding: 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: lighten($brand-grey, 10%);
+                }
+            }
+
+            &:checked + label {
+                // checked state label
+                background-color: $brand;
+
+                &:hover {
+                    background-color: darken($brand, 3%);
+                }
+            }
+
+        }
+    }
+}
+
+// Address Lookup
+// Postcode Select
+.postcode-select {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &-btn {
+        align-self: flex-end;
+        flex-grow: 1;
+        .btn {width: 100%;}
+        i {
+            font-size: rem-calc(11);
+        }
+    }
+    &-input {
+        padding-right: 8px;
+        flex-grow: 3;
+    }
+    &-dropdown {
+        flex-grow: 3;
+    }
+
+}
+.address-lookup-error {
+    font-style: italic;
+    font-weight: 600;
+    color: #fb8c00;
 }

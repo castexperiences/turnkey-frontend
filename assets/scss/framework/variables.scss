@@ -4,7 +4,7 @@
 
 /*Theme Colors*/
 
-$themecolor: #ff004a;
+$themecolor: $brand;
 $themecolor-dark: #028ee1;
 $themecolor-alt: #26c6da;
 $theme-light: #fff;
@@ -179,7 +179,7 @@ $enable-print-styles: true !default;
 // Body
 // Settings for the  element.
 $main-body-bg: #fff !default;
-$body-bg: #EFEFF1;
+$body-bg: #F8F8F8;
 $body-color: #262626 !default;
 $grid-gutter-width: 20px !default;
 // Typography
@@ -230,13 +230,14 @@ $badge-pill-padding-x: 1em !default;
 $badge-pill-padding-y: 1em !default;
 // Forms
 $input-group-addon-bg: $gray-100;
-$input-border-color: $gray-200;
+$input-border-color: #CFCFCF;
 $input-group-addon-border-color: $gray-200;
 $input-btn-focus-color: rgba(0, 0, 0, 0.25) !default;
 $input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
 $custom-control-indicator-active-bg: rgba(0, 0, 0, 35%) !default;
 $input-btn-focus-box-shadow: transparent !default;
 $custom-select-focus-box-shadow: transparent !default;
+$input-font-size: 15px !default;
 // Define common padding and border radius sizes and more.
 $border-width: 1px !default;
 $border-color: $gray-200 !default;
