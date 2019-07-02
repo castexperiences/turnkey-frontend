@@ -27,6 +27,10 @@ p.header-lead {
   margin-bottom: 0;
 }
 
+.color-brand {
+  color: $brand;
+}
+
 // Span Styles
 span {
   &.strong {

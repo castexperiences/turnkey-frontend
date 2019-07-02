@@ -44,6 +44,10 @@
         }
     }
 
+    // Section Info
+    .section-info {
+        margin-bottom: 2rem;
+    }
 
     // Initial Selection
     // Note: Is this your first item page
@@ -52,20 +56,6 @@
         // Fieldset bottom spacer
         fieldset {
             margin-bottom: 80px;
-        }
-
-
-        .explain {
-            text-align: center;
-
-            p {
-                color: $brand-grey;
-
-                &.lead {
-                    color: $brand;
-                    font-weight: 600;
-                }
-            }
         }
 
         // Address Entry
@@ -96,6 +86,17 @@
 
     }
 
+    .explain {
+        text-align: center;
+        p {
+            color: $brand-grey;
+
+            &.lead {
+                color: $brand;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 // Bottom Bar
