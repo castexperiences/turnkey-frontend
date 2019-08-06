@@ -16,9 +16,14 @@ table.table {
     tr {
       td {
         padding-left: 0;
+        vertical-align: middle;
       }
     }
     
   }
 
+}
+
+.selected {
+  background-color: $gray-300;
 }
