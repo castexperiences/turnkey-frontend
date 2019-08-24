@@ -1,328 +1,316 @@
 // General Styles
 // ---------------
+#submissions-form-page {
+    form {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
 
-// Common Stuff
-.common-header {
-    padding-top: 5%;
-    margin-bottom: 120px;
-
-    .logo {
-        text-align: center;
-
-        img {
-            max-width: 125px;
-        }
-    }
-
-}
-
-.wrapper {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    align-items: stretch;
-    height: 92vh;
-}
-
-// Main Content
-.main-content {
-
-    // Button Radios
-    .inline-options {
-        text-align: center;
-        margin-bottom: 45px;
-
-        label {
-            //min-width: 220px;
+        textarea {
             width: 100%;
-        }
-    }
-
-    // Section Heading
-    .section-heading {
-        h2 {
-            margin-bottom: 2rem;
-        }
-    }
-
-    // Section Info
-    .section-info {
-        margin-bottom: 2rem;
-    }
-
-    // Initial Selection
-    // Note: Is this your first item page
-    .initial-selection {
-
-        // Fieldset bottom spacer
-        fieldset {
-            margin-bottom: 80px;
+            padding: 5px 8px;
+            border-radius: 4px;
+            border-color: #d6d6d6;
         }
 
-        // Address Entry
-        .or-spacer {
-            display: block;
-            width: 100%;
+    }
+
+    // Common Stuff
+    .common-header {
+        padding-top: 5%;
+        margin-bottom: 10%;
+
+        .logo {
             text-align: center;
-            margin: 0 0 1rem;
-            color: $brand-grey;
+
+            img {
+                max-width: 125px;
+            }
         }
 
-        .manual-entry {
+    }
+
+    .learn-more {
+        text-transform: lowercase;
+        font-weight: 600;
+        color: $brand;
+        user-select: none;
+    }
+
+    .wrapper {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: stretch;
+        height: 100vh;
+        padding-bottom: 80px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        & > .row {
             width: 100%;
-            //text-align: center;
-            //padding: rem-calc(15);
-            text-transform: lowercase;
-            color: #9A9A9A;
-            border: 2px solid #9A9A9A;
-            border-radius: 2px;
-            margin-bottom: 1.5rem;
-
-            &:hover,
-            &:focus {
-                color: #fff;
-                background-color: #9A9A9A;
-            }
-        }
-
-    }
-
-    .explain {
-        text-align: center;
-        p {
-            color: $brand-grey;
-
-            &.lead {
-                color: $brand;
-                font-weight: 600;
-            }
-        }
-    }
-}
-
-// Bottom Bar
-.bottom-bar {
-    border-top: #DCDCDC 1px solid;
-    background-color: #FFFFFF;
-    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.04);
-    padding: 15px 25px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: table;
-    width: 100%;
-
-    .left-items,
-    .right-items {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .right-items {
-        float: right;
-    }
-
-    // Bottom bar buttons
-    .btn {
-
-        padding: 13px 35px;
-
-        &.previous {
-            margin-right: 15px;
-        }
-
-        &.reset {
-            padding: 5px 15px;
-
-            span {
-                padding-right: 8px !important;
-            }
-        }
-
-        span {
-            font-size: rem-calc(10);
-            vertical-align: middle;
-
-            &.pl {
-                padding-left: 15px;
-            }
-
-            &.pr {
-                padding-right: 15px;
-            }
-        }
-
-    }
-
-}
-
-// Sidebar Stuff
-.extrasSidebar {
-    background-color: #fff;
-    overflow: hidden;
-
-    transition: all 0.5s ease-in-out;
-    @include media-breakpoint-down(md) {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 8vh;
-    }
-
-    .sidebar-inner {
-        @include media-breakpoint-up(lg) {
-            position: fixed;
+            height: 100%;
+            margin: 0;
         }
     }
 
-}
+    // Main Content
+    .main-content {
 
-.extras-container {
-    overflow: hidden;
-}
-
-.hide-sidebar {
-    @include media-breakpoint-up(md) {
-        max-width: 0;
-        padding: 0;
-
-        .extras-title {
-            white-space: nowrap;
-        }
-    }
-    @include media-breakpoint-down(md) {
-        max-height: 0;
-    }
-}
-
-
-// Section 2
-// Select a jewellery type
-.jewellery-types {
-    //
-    .option-row {
-        //
-        // This is the loop per row
-        .jewellery-type {
-
-            &:first-child,
-            &:nth-child(3n + 1) {
-                padding-left: 0;
-            }
-
-            &:nth-child(3n + 0) {
-                padding-right: 0;
-            }
-
-            input {
-                display: none;
-                visibility: hidden;
-                left: -999px;
-            }
+        // Button Radios
+        .inline-options {
+            text-align: center;
+            margin-bottom: 45px;
 
             label {
-                position: relative;
-                border: 1px solid #D5D5D5;
-                border-radius: 3px;
-                padding: 25px;
+                //min-width: 220px;
+                width: 100%;
+            }
+        }
+
+        // Section Heading
+        .section-heading {
+            h2 {
+                margin-bottom: 2rem;
+            }
+        }
+
+        // Section Info
+        .section-info {
+            margin-bottom: 2rem;
+        }
+
+        // Initial Selection
+        // Note: Is this your first item page
+        .initial-selection {
+
+            // Fieldset bottom spacer
+            fieldset {
+                margin-bottom: 80px;
+            }
+
+            // Address Entry
+            .or-spacer {
+                display: block;
                 width: 100%;
                 text-align: center;
-                user-select: none;
-                transition: all 200ms ease-in-out;
-                margin-bottom: 1rem;
-
-                &:hover {
-                    cursor: pointer;
-                    border-color: darken(#D5D5D5, 5%);
-                }
-
-                .type-img {
-                    max-height: 120px;
-                }
-
-                .type-name {
-                    font-weight: 600;
-                    text-transform: lowercase;
-                    color: lighten($brand-black, 20%);
-                    font-size: rem-calc(18);
-                    margin-bottom: 0;
-                    padding-top: 10px;
-                }
+                margin: 0 0 1rem;
+                color: $brand-grey;
             }
 
-            // Checked state
-            input[type="radio"]:checked + label {
-                border-color: $brand;
+            .manual-entry {
+                width: 100%;
+                //text-align: center;
+                //padding: rem-calc(15);
+                text-transform: lowercase;
+                color: #9A9A9A;
+                border: 2px solid #9A9A9A;
+                border-radius: 2px;
+                margin-bottom: 1.5rem;
 
-                //.type-name {
-                //    color: $brand;
-                //}
-
-                // tick icon
-                &:after,
-                &::after {
-                    position: absolute;
-                    top: 5px;
-                    right: 10px;
-                    font-family: "FontAwesome";
-                    font-size: rem-calc(30);
-                    content: '\f058';
-                    line-height: 1;
-                    color: $brand;
-                }
-
-            }
-
-            // When jewellery type has no image
-            &.noimg {
-                label {
-
-                    .type-name {
-                        transition: padding 200ms ease;
-                        padding: 0;
-                        padding-right: 0;
-                    }
-
-                }
-
-                input[type="radio"]:checked + label {
-                    .type-name {
-                        padding-right: calc(8% + 12.5px);
-                    }
-
-                    &:after,
-                    &::after {
-                        top: 28%;
-                        right: 8%;
-                    }
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    background-color: #9A9A9A;
                 }
             }
 
         }
 
+        .explain {
+            text-align: center;
+
+            p {
+                color: $brand-grey;
+
+                &.lead {
+                    color: $brand;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    @import 'bottom-bar';
+    @import 'sidebar';
+
+    .extras-container {
+        overflow: hidden;
+    }
+
+    .hide-sidebar {
+        @include media-breakpoint-up(md) {
+            max-width: 0;
+            padding: 0;
+
+            .extras-title {
+                white-space: nowrap;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            max-height: 0;
+        }
+    }
+
+
+    // Section 2
+    // Select a jewellery type
+    .jewellery-types {
         //
+        .option-row {
+            //
+            // This is the loop per row
+            .jewellery-type {
+
+                &:first-child,
+                &:nth-child(3n + 1) {
+                    padding-left: 0;
+                }
+
+                &:nth-child(3n + 0) {
+                    padding-right: 0;
+                }
+
+                input {
+                    display: none;
+                    visibility: hidden;
+                    left: -999px;
+                }
+
+                label {
+                    position: relative;
+                    border: 1px solid #D5D5D5;
+                    border-radius: 3px;
+                    padding: 25px;
+                    width: 100%;
+                    text-align: center;
+                    user-select: none;
+                    transition: all 200ms ease-in-out;
+                    margin-bottom: 1rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        border-color: darken(#D5D5D5, 5%);
+                    }
+
+                    .type-img {
+                        max-height: 120px;
+                    }
+
+                    .type-name {
+                        font-weight: 600;
+                        text-transform: lowercase;
+                        color: lighten($brand-black, 20%);
+                        font-size: rem-calc(18);
+                        margin-bottom: 0;
+                        padding-top: 10px;
+                    }
+                }
+
+                // Checked state
+                input[type="radio"]:checked + label {
+                    border-color: $brand;
+
+                    //.type-name {
+                    //    color: $brand;
+                    //}
+
+                    // tick icon
+                    &:after,
+                    &::after {
+                        position: absolute;
+                        top: 5px;
+                        right: 10px;
+                        font-family: "FontAwesome";
+                        font-size: rem-calc(30);
+                        content: '\f058';
+                        line-height: 1;
+                        color: $brand;
+                    }
+
+                }
+
+                // When jewellery type has no image
+                &.noimg {
+                    label {
+
+                        .type-name {
+                            transition: padding 200ms ease;
+                            padding: 0;
+                            padding-right: 0;
+                        }
+
+                    }
+
+                    input[type="radio"]:checked + label {
+                        .type-name {
+                            padding-right: calc(8% + 12.5px);
+                        }
+
+                        &:after,
+                        &::after {
+                            top: 28%;
+                            right: 8%;
+                        }
+                    }
+                }
+
+            }
+
+            //
+        }
+
+        p.type-header {
+            padding-top: 15px;
+            font-weight: 600;
+            text-transform: lowercase;
+            color: $brand-black;
+            font-size: rem-calc(18);
+        }
+
     }
 
-    p.type-header {
-        padding-top: 15px;
-        font-weight: 600;
-        text-transform: lowercase;
-        color: $brand-black;
-        font-size: rem-calc(18);
+
+    // Section 3
+    // Define the jewellery details
+    .jewellery-details {
+        //
+        fieldset {
+
+        }
+
+    }
+
+    // Section 4
+    // Define the Upgrades and Final Settings
+    .upgrades {
+        .extras-wrapper {
+
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-bottom: 1rem;
+
+            p.extraTitle {
+                margin: 0;
+            }
+
+            #engravingPreview {
+                margin-top: 1rem;
+                background: #fff;
+                padding: 10px 15px;
+                p {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+
+        }
     }
 
 }
 
-
-// Section 3
-// Define the jewellery details
-.jewellery-details {
-    //
-    fieldset {
-
-    }
-
-}
+//#submissions-form-page
 
 
 // Type Specific Overrides
