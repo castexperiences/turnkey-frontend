@@ -14,3 +14,10 @@
 .btn.disabled, .btn:disabled {
     opacity: 0.45;
 }
+
+.status-pill-tooltip {
+  .tooltip-inner {
+    border-radius: 160px;
+    padding: 10px;
+  }
+}
