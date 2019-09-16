@@ -5,6 +5,7 @@
         height: 100%;
         overflow-x: hidden;
         overflow-y: scroll;
+        padding-bottom: 40px;
 
         textarea {
             width: 100%;
@@ -17,8 +18,8 @@
 
     // Common Stuff
     .common-header {
-        padding-top: 5%;
-        margin-bottom: 10%;
+        padding-top: 60px;
+        margin-bottom: 100px;
 
         .logo {
             text-align: center;
@@ -56,6 +57,14 @@
 
     // Main Content
     .main-content {
+        // To deal with the overflow scrolling issues on the sidebar
+        max-height: 100%;
+        overflow-y: scroll;
+
+        &.sidebar-open {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
 
         // Button Radios
         .inline-options {
@@ -208,6 +217,22 @@
                 }
 
                 // Checked state
+                input[type="radio"] + label {
+                    &:after,
+                    &::after {
+                        transition: opacity .2s ease, transform .2s ease;
+                        position: absolute;
+                        top: 5px;
+                        right: 10px;
+                        font-family: "FontAwesome";
+                        font-size: rem-calc(30);
+                        content: '\f058';
+                        line-height: 1;
+                        color: $brand;
+                        opacity: 0;
+                        transform: scale(0.7);
+                    }
+                }
                 input[type="radio"]:checked + label {
                     border-color: $brand;
 
@@ -218,14 +243,8 @@
                     // tick icon
                     &:after,
                     &::after {
-                        position: absolute;
-                        top: 5px;
-                        right: 10px;
-                        font-family: "FontAwesome";
-                        font-size: rem-calc(30);
-                        content: '\f058';
-                        line-height: 1;
-                        color: $brand;
+                        opacity: 1;
+                        transform: scale(1);
                     }
 
                 }
