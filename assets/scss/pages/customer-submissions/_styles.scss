@@ -66,6 +66,7 @@
             padding-right: 4%;
         }
 
+
         // Button Radios
         .inline-options {
             text-align: center;
@@ -220,11 +221,17 @@
                 input[type="radio"] + label {
                     &:after,
                     &::after {
+                        display: inline-block;
+                        font-style: normal;
+                        font-variant: normal;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
                         transition: opacity .2s ease, transform .2s ease;
                         position: absolute;
                         top: 5px;
                         right: 10px;
-                        font-family: "FontAwesome";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
                         font-size: rem-calc(30);
                         content: '\f058';
                         line-height: 1;
