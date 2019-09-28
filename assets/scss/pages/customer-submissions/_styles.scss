@@ -322,12 +322,19 @@
             }
 
             #engravingPreview {
+                border: 1px dashed #C8C8C8;
                 margin-top: 1rem;
                 background: #fff;
                 padding: 10px 15px;
                 p {
                     margin: 0;
                     text-align: center;
+
+                    &.nunito {font-family: $nunito;}
+                    &.roboto {font-family: $roboto;}
+                    &.lora {font-family: $lora;}
+                    &.roboto-mono {font-family: $robotoMono;}
+                    &.cormorant {font-family: $cormorant; font-size: rem-calc(19);}
                 }
             }
 
