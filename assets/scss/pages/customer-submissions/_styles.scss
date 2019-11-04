@@ -19,7 +19,7 @@
     // Common Stuff
     .common-header {
         padding-top: 60px;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
 
         .logo {
             text-align: center;
@@ -345,6 +345,21 @@
 
 //#submissions-form-page
 
+.progress-submission {
+    height: 15px;
+    border-radius: 15px;
+    background-color: $gray-300;
+    margin-bottom: .5rem;
+}
+
+.progress-bar-submission {
+    border-bottom-right-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+}
+
+.text-warning {
+    color: $warning;
+}
 
 // Type Specific Overrides
 @import 'events-only';
