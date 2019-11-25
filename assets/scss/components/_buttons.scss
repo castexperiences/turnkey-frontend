@@ -1,9 +1,12 @@
 .btn {
-
   font-weight: 600;
   text-transform: lowercase;
   font-size: rem-calc(15);
   padding: rem-calc(7, 20, 9, 20);
+
+  &-sm {
+    padding: 10px !important;
+  }
 
 }
 

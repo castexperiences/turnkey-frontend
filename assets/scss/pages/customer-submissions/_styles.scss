@@ -33,9 +33,13 @@
 
     .learn-more {
         text-transform: lowercase;
-        font-weight: 600;
+        font-weight: normal;
         color: $brand;
         user-select: none;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     .wrapper {

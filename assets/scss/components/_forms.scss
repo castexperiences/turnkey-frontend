@@ -16,7 +16,11 @@
         font-size: rem-calc(15);
         font-weight: 600;
         text-transform: lowercase;
-        margin-bottom: 0px;
+        margin-bottom: 6px;
+        &.req:after {
+            content: '*';
+            color: theme-color($danger);
+        }
     }
 
     // Input fields
@@ -67,14 +71,14 @@
             left: -9999px;
 
             & + label {
-                background-color: $brand-grey;
+                background-color: $gray-500;
                 color: #fff;
                 border: none;
                 padding: 20px;
 
                 &:hover {
                     cursor: pointer;
-                    background-color: lighten($brand-grey, 10%);
+                    background-color: $gray-600;
                 }
             }
 
@@ -124,4 +128,10 @@
 
 .ng-dropdown-panel .ng-dropdown-panel-items {
     max-height: 262px!important;
+}
+
+.ng-select {
+    &.ng-invalid:not(.ng-untouched) > .ng-select-container {
+        background-color: lighten(theme-color-level("danger", -10), 3%);
+    }
 }
