@@ -7,6 +7,14 @@
   &-sm {
     padding: 10px !important;
   }
+  &-grey {
+    color: #fff;
+    background-color: $brand-grey;
+  }
+  &-grey:hover {
+    color: #fff;
+    background-color: $gray-700;
+  }
 
 }
 
