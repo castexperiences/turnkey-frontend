@@ -1,18 +1,17 @@
 h1 {
-  text-transform: lowercase;
   font-weight: 600;
 }
 
 h2 {
-  text-transform: lowercase;
+
 }
 
 h3 {
-  text-transform: lowercase;
+
 }
 
 h4 {
-  text-transform: lowercase;
+
 }
 
 p {
@@ -21,7 +20,7 @@ p {
 }
 
 p.header-lead {
-  font-size: rem-calc(20);
+  font-size: rem-calc(18);
   font-weight: bold;
   color: $brand-grey;
   margin-bottom: 0;

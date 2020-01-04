@@ -2,21 +2,34 @@
 .extrasSidebar {
     background-color: #fff;
     overflow: hidden;
-    padding: 3.5% 25px;
+    padding: 3.5% 25px 2%;
     @include media-breakpoint-up(md) {
+        border-left: #D6DFE6 1px solid;
         max-width: 320px;
         transform: translateX(0);
         &.hide-sidebar {
             transform: translateX(320px);
         }
     }
+    @include media-breakpoint-down(sm) {
+        z-index: 1050;
+        border-top: #D6DFE6 1px solid;
+        opacity: 0.9;
+        backdrop-filter: blur(5px);
+        max-height: 100%;
+        &.hide-sidebar {
+            max-height: 100%;
+            display: none!important;
+
+        }
+    }
 
     transition: transform 0.5s ease-in-out 0s;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 8vh;
+        bottom: 0;
     }
 
     .sidebar-inner {
@@ -28,11 +41,24 @@
         overflow: scroll;
     }
 
+    .btn-secondary {
+        border-radius: 3px;
+    }
+
     // Sidebar positioning
     .sidebar-details {
         display: flex;
         flex-flow: column nowrap;
         height: 100%;
+
+        .extras-title {
+            @include font-size(19);
+            @include media-breakpoint-down(sm) {
+                text-align: left !important;
+                @include font-size(17);
+                margin-bottom: 0;
+            }
+        }
 
         .extras-container {
             flex-grow: 1;
@@ -42,11 +68,15 @@
             text-align: right;
 
             p {
-                font-size: rem-calc(18);
+                @include font-size(18);
                 color: $brand-grey;
                 line-height: 1.2;
                 text-transform: lowercase;
                 margin: 0;
+                @include media-breakpoint-down(sm) {
+                    text-align: left;
+                    @include font-size(16);
+                }
 
                 &.title {
                     font-weight: bold;

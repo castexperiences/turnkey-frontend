@@ -10,7 +10,7 @@ $themecolor-alt: #26c6da;
 $theme-light: #fff;
 $theme-dark: #212529;
 
-$skin1: #ff004a;
+$skin1: #fa6f6d;
 $skin2: #ffc7ce;
 $skin3: #00b0ff;
 $skin4: #6659f7;
@@ -112,13 +112,13 @@ $blue: #2962ff !default;
 $indigo: #6610f2 !default;
 $purple: #7460ee !default;
 $pink: #e83e8c !default;
-$red: #ff004a !default;
+$red: #fa6f6d !default;
 $orange: #fb8c00 !default;
 $yellow: #ffbc34 !default;
 $green: #36bea6 !default;
 $teal: #20c997 !default;
 $cyan: #4fc3f7 !default;
-$primary: #ff004a !default;
+$primary: #fa6f6d !default;
 $text-muted: $gray-500 !default;
 
 $colors: (
@@ -137,14 +137,14 @@ $colors: (
   gray-dark: $gray-800
 );
 
-$primary: #ff004a !default;
+$primary: $primary !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $blue !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-800 !default;
+$dark: #3C3845 !default;
 $muted: $gray-600 !default;
 $cyan: $cyan !default;
 $orange: $orange !default;
@@ -178,8 +178,8 @@ $enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 // Body
 // Settings for the  element.
-$main-body-bg: #fff !default;
-$body-bg: #F8F8F8;
+$main-body-bg: #FFFFFF !default;
+$body-bg: #FFFFFF; // formally F8F8F8
 $body-color: #262626 !default;
 $grid-gutter-width: 20px !default;
 // Typography
@@ -212,7 +212,7 @@ $dropdown-item-padding-y: 0.65rem !default;
 $dropdown-border-color: $gray-200;
 $dropdown-divider-bg: $gray-100;
 // Buttons
-$btn-secondary-border: $gray-300;
+$btn-secondary-border: #D6DFE6;
 // Progress bars
 $progress-bg: $gray-100;
 // Tables

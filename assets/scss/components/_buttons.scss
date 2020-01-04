@@ -1,8 +1,13 @@
 .btn {
   font-weight: 600;
-  text-transform: lowercase;
   font-size: rem-calc(15);
   padding: rem-calc(7, 20, 9, 20);
+
+  &-primary,
+  &-primary:disabled,
+  &-primary.disabled {
+    color: #ffffff;
+  }
 
   &-sm {
     padding: 10px !important;
@@ -14,6 +19,13 @@
   &-grey:hover {
     color: #fff;
     background-color: $gray-700;
+  }
+
+  // Outlines
+  &-outline- {
+    &secondary {
+      color: #3C3845;
+    }
   }
 
 }
