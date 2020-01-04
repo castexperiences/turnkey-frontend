@@ -3,6 +3,10 @@
   font-size: rem-calc(15);
   padding: rem-calc(7, 20, 9, 20);
 
+  &-primary:focus {
+    opacity: 0.5;
+  }
+
   &-primary,
   &-primary:disabled,
   &-primary.disabled {
