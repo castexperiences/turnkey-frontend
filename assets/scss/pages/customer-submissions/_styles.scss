@@ -5,7 +5,7 @@
 		height: 100%;
 		overflow-x: hidden;
 		overflow-y: scroll;
-		padding-bottom: 40px;
+		padding-bottom: 60px;
 
 		textarea {
 			width: 100%;
@@ -14,6 +14,9 @@
 			border-color: #d6d6d6;
 		}
 
+	}
+	.sidebar-open form {
+		padding-bottom: 120px;
 	}
 
 	// Common Stuff
@@ -390,13 +393,37 @@
 					@include make-col(4);
 				}
 
+				.type-wrapper {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 2rem;
+				}
+
 				label {
 					display: flex;
 					flex-direction: column;
-				}
-				.label-inner-wrapper {
 					flex: 1 0 auto;
+					margin-bottom: 0;
+					.type-name {
+						.muted {
+							opacity: 0.5;
+							@include font-size(14);
+						}
+					}
+
+					.label-inner-wrapper {
+						flex: 1 0 auto;
+					}
+
 				}
+
+				a.see {
+					padding: 8px 0;
+					color: #9BC1BC;
+					text-align: center;
+					@include font-size(13);
+				}
+
 				p {
 					text-align: left;
 					font-weight: 400;
